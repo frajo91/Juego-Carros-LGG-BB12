@@ -1,4 +1,4 @@
-/* 
+/*
     Document   : main.css
     Created on : 19-nov-2013, 15.47.44
     Author     : Biagio Iannuzzi
@@ -6,26 +6,30 @@
         Purpose of the stylesheet follows.
 */
 
-root { 
+root {
     display: block;
 }
 
-body{
+body {
     background-color: #000000;
     background-repeat: repeat-x;
     background-position: top;
-    background-image: url(../sprites/bg_tile.jpg);    
+    background-image: url(../sprites/bg_tile.jpg);
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
-     
-input, input:before, input:after {
+
+input,
+input:before,
+input:after {
     -webkit-user-select: initial;
     -khtml-user-select: initial;
     -moz-user-select: initial;
@@ -33,28 +37,31 @@ input, input:before, input:after {
     user-select: initial;
 }
 
-::selection { background: transparent;color:inherit; }
-::-moz-selection { background: transparent;color:inherit; }
+::selection {
+    background: transparent;
+    color: inherit;
+}
+::-moz-selection {
+    background: transparent;
+    color: inherit;
+}
 
-#canvas{
-    
+#canvas {
     position: fixed;
-    
-    
 }
 
 canvas {
     image-rendering: optimizeSpeed;
-    image-rendering:-o-crisp-edges;
-    image-rendering:-webkit-optimize-contrast;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
     -ms-interpolation-mode: nearest-neighbor;
-	-ms-touch-action: none;
+    -ms-touch-action: none;
 }
 
-.ani_hack{
+.ani_hack {
     -webkit-perspective: 1000;
     -webkit-backface-visibility: hidden;
-    
+
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -67,40 +74,46 @@ canvas {
 
 /***************FONTS*******************/
 @font-face {
-    font-family: 'ArialBold';
-    src: url('arialbd-webfont.eot');
-    src: url('arialbd-webfont.eot?#iefix') format('embedded-opentype'),
-         url('arialbd-webfont.woff2') format('woff2'),
-         url('arialbd-webfont.woff') format('woff'),
-         url('arialbd-webfont.ttf') format('truetype'),
-         url('arialbd-webfont.svg#ArialBold') format('svg');
+    font-family: "ArialBold";
+    src: url("arialbd-webfont.eot");
+    src:
+        url("arialbd-webfont.eot?#iefix") format("embedded-opentype"),
+        url("arialbd-webfont.woff2") format("woff2"),
+        url("arialbd-webfont.woff") format("woff"),
+        url("arialbd-webfont.ttf") format("truetype"),
+        url("arialbd-webfont.svg#ArialBold") format("svg");
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'Digital';
-    src: url('digital-7-webfont.eot');
-    src: url('digital-7-webfont.eot?#iefix') format('embedded-opentype'),
-         url('digital-7-webfont.woff2') format('woff2'),
-         url('digital-7-webfont.woff') format('woff'),
-         url('digital-7-webfont.ttf') format('truetype'),
-         url('digital-7-webfont.svg#Digital') format('svg');
+    font-family: "Digital";
+    src: url("digital-7-webfont.eot");
+    src:
+        url("digital-7-webfont.eot?#iefix") format("embedded-opentype"),
+        url("digital-7-webfont.woff2") format("woff2"),
+        url("digital-7-webfont.woff") format("woff"),
+        url("digital-7-webfont.ttf") format("truetype"),
+        url("digital-7-webfont.svg#Digital") format("svg");
     font-weight: normal;
     font-style: normal;
-
 }
 
-.check-fonts{
-        position:fixed;
-        opacity:0;
+@font-face {
+    font-family: "Brandon";
+    src: url("Brandon.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
-.check-font-1{
-        font-family: 'ArialBold';
-        
+.check-fonts {
+    position: fixed;
+    opacity: 0;
 }
-.check-font-2{
-        font-family: 'Digital';
+
+.check-font-1 {
+    font-family: "ArialBold";
+}
+.check-font-2 {
+    font-family: "Digital";
 }
